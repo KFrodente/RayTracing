@@ -30,7 +30,7 @@ ray_t Camera::GetRay(const glm::vec2& point) const
 	ray.origin = m_eye;
 		// calculate direction from point
 		//ray.direction = <lower left + (horizontal * point x) + (vertical * point.y) - eye>
-	ray.direction = m_lowerLeft + (m_horizontal * point.x) + (m_vertical * point.y) - m_eye;
+	ray.direction = m_lowerLeft + (m_horizontal * point.x) + (m_vertical * point.y) - ray.origin;
 
 		return ray;
 }
@@ -50,5 +50,5 @@ void Camera::CalculateViewPlane()
 		// calculate vertical vector (up vector * height)
 	m_vertical = m_up * height;
 		// calculate lower left location (origin)
-	m_lowerLeft = m_eye + (m_horizontal * 0.5f) - (m_vertical * 0.5f) - m_forward;
+	m_lowerLeft = m_eye - (m_horizontal * 0.5f) - (m_vertical * 0.5f) - m_forward;
 }
