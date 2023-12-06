@@ -31,6 +31,8 @@ private:
 	std::vector<std::unique_ptr<Object>> m_objects;
 
 	int m_depth{ 5 };
-	color3_t m_topColor{ 0.8f, 0.1f, 1.0f };
-	color3_t m_bottomColor{ 0.5f, 0.8f, 1.0f };
+	/*color3_t m_topColor{ 0.8f, 0.1f, 1.0f };
+	color3_t m_bottomColor{ 0.5f, 0.8f, 1.0f };*/
+	color3_t m_topColor{ 0.0f, .25f, 1.0f };
+	color3_t m_bottomColor{ 1, 1, 1 };
 };
