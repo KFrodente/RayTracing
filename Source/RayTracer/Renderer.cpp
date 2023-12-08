@@ -25,6 +25,7 @@ bool Renderer::CreateWindow(const std::string& title, int width, int height)
 {
 	m_window = SDL_CreateWindow(title.c_str(), 50, 50, width, height, SDL_WINDOW_SHOWN);
 
+
 	if (!m_window)
 	{
 		std::cerr << "SDL Error: " << SDL_GetError() << std::endl;

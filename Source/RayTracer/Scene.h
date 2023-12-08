@@ -31,8 +31,8 @@ private:
 
 	/*color3_t m_topColor{ 0.8f, 0.1f, 1.0f };
 	color3_t m_bottomColor{ 0.5f, 0.8f, 1.0f };*/
-	color3_t m_topColor{ 1 };
-	color3_t m_bottomColor{ 1 };
+	color3_t m_topColor{ .6f, .75f, .9f };
+	color3_t m_bottomColor{ .9f, .6f, .8f };
 	/*color3_t m_topColor{ 0.0f, .25f, 1.0f };
 	color3_t m_bottomColor{ 1, 1, 1 };*/
 };
